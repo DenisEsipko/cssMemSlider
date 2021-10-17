@@ -143,3 +143,71 @@ p{
 
     transform: scale(1);
 }
+/******* сладер текста **************/
+
+
+#slider_text {
+    width: 75%;
+    height: 10%;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #d4d4d4;
+    border-radius: 3px;
+
+
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    color: white;
+}
+
+#slider_text > ul {
+    list-style: none;
+    height: 100%;
+    width: 500%;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+
+    transition: left .5s;
+
+    display: flex;
+    align-items: center;
+}
+
+#slider_text > ul > li {
+    width: 20%;
+    float: left;
+    position: relative;
+
+
+}
+
+#slider_text > ul > li p {
+    padding: 10px;
+
+}
+
+
+#slide1:checked ~ #slider_text > ul {
+    left: 0
+}
+
+#slide2:checked ~ #slider_text > ul {
+    left: -100%
+}
+
+#slide3:checked ~ #slider_text > ul {
+    left: -200%
+}
+
+#slide4:checked ~ #slider_text > ul {
+    left: -300%
+}
+
+
+.controls_div_emptu{
+    display: block;
+    padding: 1.5em;
+}
